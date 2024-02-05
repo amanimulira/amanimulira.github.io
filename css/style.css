@@ -110,7 +110,7 @@ p {
 
 /* home section */
 #home {
-  background: url('../images/home-bg_1.HEIC') no-repeat;
+  background: url('../images/home-bg.HEIC') no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
