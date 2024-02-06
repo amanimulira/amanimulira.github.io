@@ -608,6 +608,7 @@ footer {
   /* Adjust the border color and width as needed */
   margin: 0 auto;
   /* Center the image */
+
 }
 
 /* For demonstration purpose only */
@@ -657,4 +658,44 @@ footer {
 .button-container {
   text-align: center;
   /* Center align the content */
+}
+
+/* projects css */
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  max-width: 300px;
+  width: 100%;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-info {
+  padding: 20px;
+  display: none;
+}
+
+/* Set a fixed height for project cards */
+.project-card.open {
+  height: 350px; /* Adjust as needed */
 }

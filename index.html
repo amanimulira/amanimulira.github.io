@@ -53,7 +53,7 @@
 			<div class="row">
 				<div class="col-md-12 col-sm-12">
 
-					<hr>
+					<!-- <hr style="color: azure;"> -->
 					<h3><span class="bold" style="color: azure;">AMANI MULIRA</h3>
 					<h1 class="heading" style="color: azure;"> Data Scientist | Data Analysis </h1>
 					<a href="#about" style="color: azure;" class="smoothScroll btn btn-default">About Me</a>
@@ -67,10 +67,11 @@
 							<a href="mailto:amanimulira@gmail.com" class="fa fa-google wow bounceIn"
 								data-wow-delay="0.3s" target="_parent" style="color: azure;"></a>
 						</li>
-						<li><a href="https://www.linkedin.com/in/amani-mulira-731321225/" class="fa fa-linkedin wow bounceIn" data-wow-delay="0.6s"
-								style="color: azure;"></a></li>
-						<li><a href="https://github.com/amanimulira" class="fa fa-github wow bounceIn" data-wow-delay="0.9s"
-								style="color: azure;"></a></li>
+						<li><a href="https://www.linkedin.com/in/amani-mulira-731321225/"
+								class="fa fa-linkedin wow bounceIn" data-wow-delay="0.6s" style="color: azure;"></a>
+						</li>
+						<li><a href="https://github.com/amanimulira" class="fa fa-github wow bounceIn"
+								data-wow-delay="0.9s" style="color: azure;"></a></li>
 					</ul>
 				</div>
 			</div>
@@ -99,8 +100,6 @@
 							led me to specialize in the Data Science track as part of my undergraduate program.</p>
 					</div>
 				</div>
-
-
 				<div class="col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="0.6s">
 
 					<h3>PROFILE</h3>
@@ -117,8 +116,6 @@
 						amanimulira@gmail.com
 					</p>
 				</div>
-
-
 				<div class="col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="1s">
 					<h3>SKILLS & EXPERTISE</h3>
 					<p> I am a self-driven and collaborative individual, adept at working both independently and within
@@ -142,10 +139,6 @@
 					</div>
 				</div>
 				<hr>
-
-
-
-
 			</div>
 			<div class="button-container">
 				<a href="path/to/your/cv.pdf" download class="button">Download CV</a>
@@ -160,65 +153,74 @@
 	<div id="portfolio">
 		<div class="container">
 			<div class="row">
+			
 				<div class="col-md-12 col-sm-12">
 					<h1 class="heading bold">PORTFOLIO</h1>
 					<h2 class="subheading">Personal Project For Continuous Improvement</h2>
 					<!-- ISO section -->
 					<div class="iso-section">
-						<ul class="filter-wrapper clearfix">
-							<li><a href="#" data-filter="*" class="selected opc-main-bg">All</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".html">Html</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".photoshop">Data Science / ML</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".wordpress">Flutter Apps</a></li>
-							<li><a href="#" class="opc-main-bg" data-filter=".mobile">Algorithmic Trading</a></li>
-						</ul>
-						<div class="iso-box-section wow fadeIn" data-wow-delay="0.9s">
-							<div class="iso-box-wrapper col4-iso-box">
 
-								<div class="iso-box html wordpress mobile col-lg-4 col-md-4 col-sm-6 col-xs-6">
-									<a href="images/portfolio-img1.jpg" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img1.jpg" alt="portfolio img"></a>
+								<div class="projects-container">
+										<div class="project-card" onclick="showProjectInfo('personalWebsite')">
+											<img src="images/PersonalWebsite.png" alt="personalWebsite" class="project-image">
+											<div class="project-info" id="personalWebsite" style="display: none;">
+												<h3>Personal Website</h3>
+												<p>Created my own personal website for showing resume & displaying projects which I have acomplished in the past.</p>
+												<p>Languages/Technologies Used: HTML, CSS, JavaScript</p>
+											<p>Details</p>
+											</div>
+										</div>
+
+										<div class="project-card" onclick="showProjectInfo('MNIST_CNN')">
+											<img src="images/CNN_93_Accuracy.png" alt="MNIST_CNN" class="project-image">
+											<div class="project-info" id="MNIST_CNN" style="display: none;">
+												<h3>Fashion MNIST Classfier</h3>
+												<p>93 % Final Test Accuracy. Utilize Seaborn to visualize confusion matrix, MatPlotLib for training loss/accuracy visualization and PyTorch to 1. Build the Neural Network, 2. Train the Network. </p>
+												<p>More Details</p>
+												<p>Languages/Technologies Used: PyTorch, MatPlotLib, SkLearn, Seaborn</p>
+											</div>
+										</div>
+										
+										<div class="project-card" onclick="showProjectInfo('stockMarketData')">
+											<img src="images/CNN_93_Accuracy.png" alt="stockMarketData" class="project-image">
+											<div class="project-info" id="stockMarketData" style="display: none;">
+												<h3>Fashion MNIST Classfier</h3>
+												<p>93 % Final Test Accuracy. Utilize Seaborn to visualize confusion matrix, MatPlotLib for training loss/accuracy visualization and PyTorch to 1. Build the Neural Network, 2. Train the Network. </p>
+												<p>More Details</p>
+												<p>Languages/Technologies Used: PyTorch, MatPlotLib, SkLearn, Seaborn</p>
+											</div>
+										</div>
+										<div class="project-card" onclick="showProjectInfo('p4')">
+											<img src="images/CNN_93_Accuracy.png" alt="MNIST_CNN" class="project-image">
+											<div class="project-info" id="p4" style="display: none;">
+												<h3>Fashion MNIST Classfier</h3>
+												<p>93 % Final Test Accuracy. Utilize Seaborn to visualize confusion matrix, MatPlotLib for training loss/accuracy visualization and PyTorch to 1. Build the Neural Network, 2. Train the Network. </p>
+												<p>More Details</p>
+												<p>Languages/Technologies Used: PyTorch, MatPlotLib, SkLearn, Seaborn</p>
+											</div>
+										</div>
+
+										<div class="project-card" onclick="showProjectInfo('p5')">
+											<img src="images/CNN_93_Accuracy.png" alt="MNIST_CNN" class="project-image">
+											<div class="project-info" id="p5" style="display: none;">
+												<h3>Fashion MNIST Classfier</h3>
+												<p>93 % Final Test Accuracy. Utilize Seaborn to visualize confusion matrix, MatPlotLib for training loss/accuracy visualization and PyTorch to 1. Build the Neural Network, 2. Train the Network. </p>
+												<p>More Details</p>
+												<p>Languages/Technologies Used: PyTorch, MatPlotLib, SkLearn, Seaborn</p>
+											</div>
+										</div>
+					
+										<!-- Add more project cards as needed -->
+									<!-- </div> -->
 								</div>
 
-								<div class="iso-box wordpress col-md-4 col-lg-4 col-sm-6 col-xs-6">
-									<a href="images/portfolio-img2.jpg" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img2.jpg" alt="portfolio img"></a>
-								</div>
+								
+									
+				
+									<!-- Add more project cards as needed -->
+								<!-- </div> -->
+							</div>
 
-								<div class="iso-box html mobile col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									<a href="images/portfolio-img3.jpg" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img3.jpg" alt="portfolio img"></a>
-								</div>
-
-								<div class="iso-box wordpress col-lg-4 col-md-4 col-sm-6 col-xs-6">
-									<a href="images/portfolio-img4.jpg" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img4.jpg" alt="portfolio img"></a>
-								</div>
-
-								<div class="iso-box html photoshop col-lg-4 col-md-4 col-sm-6 col-xs-6">
-									<a href="images/portfolio-img5.jpg" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img5.jpg" alt="portfolio img"></a>
-								</div>
-
-								<div class="iso-box photoshop col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									<a href="images/portfolio-img6.jpg" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img6.jpg" alt="portfolio img"></a>
-								</div>
-
-								<div class="iso-box photoshop mobile col-lg-4 col-md-4 col-sm-12 col-xs-6">
-									<a href="images/portfolio-img7.jpg" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img7.jpg" alt="portfolio img"></a>
-								</div>
-
-								<div class="iso-box photoshop mobile col-lg-4 col-md-4 col-sm-6 col-xs-6">
-									<a href="images/portfolio-img8.jpg" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img8.jpg" alt="portfolio img"></a>
-								</div>
-
-								<div class="iso-box wordpress mobile col-lg-4 col-md-4 col-sm-6 col-xs-12">
-									<a href="images/portfolio-img9.jpg" data-lightbox-gallery="portfolio-gallery"><img
-											src="images/portfolio-img9.jpg" alt="portfolio img"></a>
-								</div>
 
 							</div>
 						</div>
@@ -228,6 +230,27 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+	function showProjectInfo(projectId) {
+  var projectInfo = document.getElementById(projectId);
+  
+  // Close all other project cards
+  var allProjectInfos = document.querySelectorAll('.project-info');
+  allProjectInfos.forEach(function(info) {
+    if (info.id !== projectId) {
+      info.style.display = "none";
+    }
+  });
+  
+  // Toggle display of clicked project card
+  if (projectInfo.style.display === "none") {
+    projectInfo.style.display = "block";
+  } else {
+    projectInfo.style.display = "none";
+  }
+}
+	</script>
 
 	<!-- team section -->
 	<section id="team">
