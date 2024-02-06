@@ -507,19 +507,6 @@ footer {
   padding: 20px;
 }
 
-.profile-image {
-  flex: 0 0 auto;
-  margin-right: 20px;
-  width: 150px;  /* Adjust the size as needed */
-  height: 150px; /* Adjust the size as needed */
-  border-radius: 50%;
-  overflow: hidden;
-  justify-content: space-between;
-  padding-right: 20px;
-  border: 5px solid #FFD321; /* Adjust the border color and width as needed */
-  margin: 0 auto; /* Center the image */
-}
-
 .profile-description {
   padding-left: 20px;
 }
@@ -535,13 +522,6 @@ footer {
 
 
 /* 
-.profile-picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Maintain aspect ratio and cover the container */
-  /* border-radius: 50%; Ensure the image itself is circular */
-
-
 
 
 
@@ -556,6 +536,16 @@ footer {
   }
 
   .profile-image {
+    flex: 0 0 auto;
+  margin-right: 20px;
+  width: 150px;  /* Adjust the size as needed */
+  height: 150px; /* Adjust the size as needed */
+  border-radius: 50%;
+  overflow: hidden;
+  justify-content: space-between;
+  padding-right: 20px;
+  border: 5px solid #FFD321; /* Adjust the border color and width as needed */
+  margin: 0 auto; /* Center the image */
     margin-bottom: 20px; /* Add space between image and text */
   }
 
@@ -571,6 +561,7 @@ footer {
     .profile-container {
       flex-direction: row; /* Display items side by side */
       justify-content: space-between;
+      text-align: left;
       align-items: flex-start;
     }
 
