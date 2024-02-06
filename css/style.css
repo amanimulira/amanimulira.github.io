@@ -599,7 +599,7 @@ footer {
   margin-right: 20px;
   width: 150px;
   /* Adjust the size as needed */
-  height: auto;
+  height: 150px;
   /* Adjust the size as needed */
   border-radius: 50%;
   overflow: hidden;
@@ -613,7 +613,7 @@ footer {
 /* For demonstration purpose only */
 .profile-image img {
   width: 150px;
-  height: auto;
+  height: 150px;
   border-radius: 50%;
   /* Make the image circular */
 }
