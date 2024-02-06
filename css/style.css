@@ -661,7 +661,6 @@ footer {
 }
 
 /* projects css */
-
 .projects-container {
   display: flex;
   flex-wrap: wrap;
@@ -690,12 +689,42 @@ footer {
   border-radius: 10px 10px 0 0;
 }
 
-.project-info {
-  padding: 20px;
+/* Modal styles */
+.modal {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  overflow: auto;
+  padding-top: 60px; /* Center modal vertically */
 }
 
-/* Set a fixed height for project cards */
-.project-card.open {
-  height: 350px; /* Adjust as needed */
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: auto;
+  padding: 20px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto; /* Enable scrolling if content exceeds modal height */
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

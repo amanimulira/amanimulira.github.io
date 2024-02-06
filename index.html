@@ -153,103 +153,79 @@
 	<div id="portfolio">
 		<div class="container">
 			<div class="row">
-			
+
 				<div class="col-md-12 col-sm-12">
 					<h1 class="heading bold">PORTFOLIO</h1>
 					<h2 class="subheading">Personal Project For Continuous Improvement</h2>
 					<!-- ISO section -->
 					<div class="iso-section">
 
-								<div class="projects-container">
-										<div class="project-card" onclick="showProjectInfo('personalWebsite')">
-											<img src="images/PersonalWebsite.png" alt="personalWebsite" class="project-image">
-											<div class="project-info" id="personalWebsite" style="display: none;">
-												<h3>Personal Website</h3>
-												<p>Created my own personal website for showing resume & displaying projects which I have acomplished in the past.</p>
-												<p>Languages/Technologies Used: HTML, CSS, JavaScript</p>
-											<p>Details</p>
-											</div>
-										</div>
-
-										<div class="project-card" onclick="showProjectInfo('MNIST_CNN')">
-											<img src="images/CNN_93_Accuracy.png" alt="MNIST_CNN" class="project-image">
-											<div class="project-info" id="MNIST_CNN" style="display: none;">
-												<h3>Fashion MNIST Classfier</h3>
-												<p>93 % Final Test Accuracy. Utilize Seaborn to visualize confusion matrix, MatPlotLib for training loss/accuracy visualization and PyTorch to 1. Build the Neural Network, 2. Train the Network. </p>
-												<p>More Details</p>
-												<p>Languages/Technologies Used: PyTorch, MatPlotLib, SkLearn, Seaborn</p>
-											</div>
-										</div>
-										
-										<div class="project-card" onclick="showProjectInfo('stockMarketData')">
-											<img src="images/CNN_93_Accuracy.png" alt="stockMarketData" class="project-image">
-											<div class="project-info" id="stockMarketData" style="display: none;">
-												<h3>Fashion MNIST Classfier</h3>
-												<p>93 % Final Test Accuracy. Utilize Seaborn to visualize confusion matrix, MatPlotLib for training loss/accuracy visualization and PyTorch to 1. Build the Neural Network, 2. Train the Network. </p>
-												<p>More Details</p>
-												<p>Languages/Technologies Used: PyTorch, MatPlotLib, SkLearn, Seaborn</p>
-											</div>
-										</div>
-										<div class="project-card" onclick="showProjectInfo('p4')">
-											<img src="images/CNN_93_Accuracy.png" alt="MNIST_CNN" class="project-image">
-											<div class="project-info" id="p4" style="display: none;">
-												<h3>Fashion MNIST Classfier</h3>
-												<p>93 % Final Test Accuracy. Utilize Seaborn to visualize confusion matrix, MatPlotLib for training loss/accuracy visualization and PyTorch to 1. Build the Neural Network, 2. Train the Network. </p>
-												<p>More Details</p>
-												<p>Languages/Technologies Used: PyTorch, MatPlotLib, SkLearn, Seaborn</p>
-											</div>
-										</div>
-
-										<div class="project-card" onclick="showProjectInfo('p5')">
-											<img src="images/CNN_93_Accuracy.png" alt="MNIST_CNN" class="project-image">
-											<div class="project-info" id="p5" style="display: none;">
-												<h3>Fashion MNIST Classfier</h3>
-												<p>93 % Final Test Accuracy. Utilize Seaborn to visualize confusion matrix, MatPlotLib for training loss/accuracy visualization and PyTorch to 1. Build the Neural Network, 2. Train the Network. </p>
-												<p>More Details</p>
-												<p>Languages/Technologies Used: PyTorch, MatPlotLib, SkLearn, Seaborn</p>
-											</div>
-										</div>
-					
-										<!-- Add more project cards as needed -->
-									<!-- </div> -->
+						<div class="projects-container">
+							<div class="project-card">
+								<img src="images/PersonalWebsite.png" alt="Project 1" class="project-image"
+									onclick="showProjectInfo('project1')">
+								<div class="project-info" id="project1-info" style="display: none;">
+									<img src="images/PersonalWebsite.png" alt="Project 1" class="project-image">
+									<h3>Personal Website</h3>
+									<p>Created my own personal website for showing resume & displaying projects which I
+										have acomplished in the past.</p>
+									<p>Languages/Technologies Used: HTML, CSS, JavaScript</p>
 								</div>
-
-								
-									
-				
-									<!-- Add more project cards as needed -->
-								<!-- </div> -->
+							</div>
+							<div class="project-card">
+								<img src="images/CNN_93_Accuracy.png" alt="Project 2" class="project-image"
+									onclick="showProjectInfo('project2')">
+								<div class="project-info" id="project2-info" style="display: none;">
+									<img src="images/CNN_93_Accuracy.png" alt="Project 2" class="project-image">
+									<h3>Fashion MNIST Classfier</h3>
+									<p>93 % Final Test Accuracy. Utilize Seaborn to visualize confusion matrix,
+										MatPlotLib for training loss/accuracy visualization and PyTorch to 1. Build the
+										Neural Network, 2. Train the Network. </p>
+									<p>Languages/Technologies Used: PyTorch, MatPlotLib, SkLearn, Seaborn</p>
+								</div>
 							</div>
 
-
-							</div>
+							<!-- Add more project cards as needed -->
 						</div>
 
+						<!-- Modal -->
+						<div id="projectModal" class="modal" onclick="closeModal()">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal()">&times;</span>
+								<img id="modalImage" class="project-image" src="" alt="">
+								<div id="projectModalContent"></div>
+							</div>
+						</div>
 					</div>
+
+
 				</div>
 			</div>
+
 		</div>
+	</div>
+	</div>
+	</div>
 	</div>
 
 	<script>
-	function showProjectInfo(projectId) {
-  var projectInfo = document.getElementById(projectId);
-  
-  // Close all other project cards
-  var allProjectInfos = document.querySelectorAll('.project-info');
-  allProjectInfos.forEach(function(info) {
-    if (info.id !== projectId) {
-      info.style.display = "none";
-    }
-  });
-  
-  // Toggle display of clicked project card
-  if (projectInfo.style.display === "none") {
-    projectInfo.style.display = "block";
-  } else {
-    projectInfo.style.display = "none";
-  }
-}
+		function showProjectInfo(projectId) {
+			var projectInfo = document.getElementById(projectId + "-info").innerHTML;
+			var modalContent = document.getElementById('projectModalContent');
+
+			// Set modal content to project info
+
+			modalContent.innerHTML = projectInfo;
+
+			// Display modal
+			var modal = document.getElementById('projectModal');
+			modal.style.display = "block";
+		}
+
+		function closeModal() {
+			var modal = document.getElementById('projectModal');
+			modal.style.display = "none";
+		}
 	</script>
 
 	<!-- team section -->
