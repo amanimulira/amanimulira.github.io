@@ -565,33 +565,6 @@ footer {
   }
 }
 
-.profile-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.profile-description {
-  padding-left: 20px;
-}
-
-/* For demonstration purpose only */
-.profile-image img {
-  width: 100px;
-  /* Adjust image size as needed */
-  height: auto;
-  border-radius: 50%;
-  /* Make the image circular */
-}
-
-/* ---------------- */
-
-
-/* 
-
-
-
   /* finally */
 
 .profile-container {
