@@ -569,7 +569,7 @@ footer {
 
 /* For demonstration purpose only */
 .profile-image img {
-  width: 100px;
+  width: 100%;
   /* Adjust image size as needed */
   height: auto;
   border-radius: 50%;
