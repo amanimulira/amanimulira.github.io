@@ -565,6 +565,24 @@ footer {
   }
 }
 
+
+
+/* For demonstration purpose only */
+.profile-image img {
+  width: 100px;
+  /* Adjust image size as needed */
+  height: auto;
+  border-radius: 50%;
+  /* Make the image circular */
+}
+
+/* ---------------- */
+
+
+/* 
+
+
+
   /* finally */
 
 .profile-container {
@@ -581,7 +599,7 @@ footer {
   margin-right: 20px;
   width: 150px;
   /* Adjust the size as needed */
-  height: 150px;
+  height: auto;
   /* Adjust the size as needed */
   border-radius: 50%;
   overflow: hidden;
@@ -594,7 +612,7 @@ footer {
 
 /* For demonstration purpose only */
 .profile-image img {
-
+  width: 150px;
   height: auto;
   border-radius: 50%;
   /* Make the image circular */
